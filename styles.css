@@ -113,13 +113,15 @@ main {
 
 /* Estilo mejorado para la descripción */
 .product-description {
-    font-size: 14px; /* Más pequeña */
+    font-size: 16px; /* Tamaño más grande */
     margin: 10px 0;
-    font-family: 'Arial', sans-serif; /* Más simple y ligera */
-    font-style: italic; /* Estilo delicado */
-    color: #555; /* Color más suave */
-    align-content: center;
+    font-family: 'Arial', sans-serif;
+    font-style: italic; /* Opcional, puedes eliminarlo si no quieres este estilo */
+    color: #555;
+    text-align: justify; /* Alineación justificada */
+    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
 }
+
 
 .btn {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -245,12 +247,12 @@ footer {
     }
 
     .product-title {
-        font-size: 22px; /* Ajustado para pantallas pequeñas */
+        font-size: 30px; /* Ajustado para pantallas pequeñas */
     }
 
     .product-description {
         font-size: 15px;
-        text-align: center;
+        text-align: justify;
     }
 
     .features h2 {
@@ -277,6 +279,7 @@ footer {
     .rating p {
         font-size: 18px;
         margin-bottom: 10px;
+        font-weight: bold;
     }
 
     footer {
