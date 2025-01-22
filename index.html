@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto Destacado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logooriyi.png" alt="Logo" class="logo">
+    </header>
+    <main>
+        <div class="product-container">
+            <div class="image-container">
+                <img src="portadacaja.png" alt="Producto" class="product-image" id="main-image">
+                <div class="image-selector">
+                    <div class="selector-dot active" data-image="portadacaja.png"></div>
+                    <div class="selector-dot" data-image="cajaatras.png"></div>
+                </div>
+            </div>
+            <h1 class="product-title">DOY X HECHO - ANDREZZ & SKINNY</h1>
+            <div class="rating">
+                <span>★★★★★</span>
+                <p class="rating-details">5.0 (2005 valoraciones)</p>
+            </div>
+            <p class="product-description">¡Prepárate para un desayuno lleno de sabor y ritmo con DOY X HECHO de Andrezz & Skinny!
+                 Este éxito urbano es el cereal perfecto para empezar el día con energía y estilo. 
+                 Con un beat tan crujiente como las piezas en tu tazón y un flow que te envuelve como la leche, esta canción es la combinación perfecta de sabor y actitud. 
+                ¡Dale un giro a tu mañana y deja que el sabor del ritmo invada tu día con DOY X HECHO!</p>
+            <div class="features">
+                <h2>Características del Producto</h2>
+                <div class="feature">
+                    <p>Lírica</p>
+                    <div class="progress-bar full"></div>
+                </div>
+                <div class="feature">
+                    <p>Flow</p>
+                    <div class="progress-bar full"></div>
+                </div>
+                <div class="feature">
+                    <p>Improvisación</p>
+                    <div class="progress-bar three-quarters"></div>
+                </div>
+            </div>
+            <button class="btn preview-btn">Ver Preview</button>
+            <button class="btn get-product-btn">Obtener Producto</button>
+            <div class="comments">
+                <h2>Comentarios</h2>
+                <div class="comment">
+                    <h3 class="username">Juan Pérez</h3>
+                    <p class="user-comment">"El producto es increíble, superó mis expectativas. La calidad es excelente y el servicio fue rápido y eficiente."</p>
+                </div>
+                <div class="comment">
+                    <h3 class="username">María López</h3>
+                    <p class="user-comment">"Estoy muy satisfecha con mi compra. Definitivamente lo recomendaría a mis amigos y familiares."</p>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 Todos los derechos reservados.</p>
+    </footer>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const mainImage = document.getElementById("main-image");
+        const selectorDots = document.querySelectorAll(".selector-dot");
+
+        selectorDots.forEach(dot => {
+            dot.addEventListener("click", () => {
+                // Cambiar la imagen principal
+                mainImage.src = dot.dataset.image;
+
+                // Actualizar la clase "active" en los puntos
+                selectorDots.forEach(d => d.classList.remove("active"));
+                dot.classList.add("active");
+            });
+        });
+    });
+</script>
+
+</html>

@@ -1,0 +1,297 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+
+header, footer {
+    background-color: #800a20;
+    color: white;
+    padding: 15px 20px;
+    text-align: left;
+    position: relative;
+}
+
+header .logo {
+    width: 100px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header h1 {
+    display: inline-block;
+    margin: 0;
+    margin-left: 15px;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Sección de características */
+.features {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.features h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #110749;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.feature {
+    margin-bottom: 15px;
+}
+
+.feature p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 5px;
+}
+
+.progress-bar::before {
+    content: '';
+    display: block;
+    height: 100%;
+    background-color: #800a20; /* Color de progreso */
+    transition: width 0.3s ease;
+}
+
+.progress-bar.full::before {
+    width: 100%; /* Llena completamente */
+}
+
+.progress-bar.three-quarters::before {
+    width: 75%; /* Llena al 75% */
+}
+
+.progress-bar.half::before {
+    width: 50%; /* Llena al 50% */
+}
+
+.product-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilo mejorado para el título */
+.product-title {
+    font-size: 28px; /* Más grande */
+    margin: 15px 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold; /* Más gruesa */
+    color: #110749; /* Color destacado */
+}
+
+/* Estilo mejorado para la descripción */
+.product-description {
+    font-size: 14px; /* Más pequeña */
+    margin: 10px 0;
+    font-family: 'Arial', sans-serif; /* Más simple y ligera */
+    font-style: italic; /* Estilo delicado */
+    color: #555; /* Color más suave */
+    align-content: center;
+}
+
+.btn {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: block;
+    width: 80%;
+    max-width: 250px; /* Botones más grandes */
+    margin: 15px auto; /* Mayor espaciado entre botones */
+    padding: 15px; /* Más padding para un diseño espacioso */
+    font-size: 20px; /* Texto más grande */
+    font-weight: bold; /* Texto en negrita */
+    color: white; /* Texto en blanco */
+    background-color: #800a20; /* Color azul primario */
+    border: none;
+    border-radius: 8px; /* Bordes más redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de profundidad */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #3d0610; /* Color más oscuro al pasar el cursor */
+    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+}
+
+.btn:active {
+    transform: scale(0.98); /* Efecto de clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra reducida al hacer clic */
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rating span {
+    font-size: 50px;
+    color: gold;
+    margin-right: 8px; /* Espaciado entre estrellas y texto */
+}
+
+.rating-details {
+    font-size: 18px;
+    color: #333;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+/* Sección de comentarios */
+.comments {
+    margin-top: 20px;
+    text-align: left;
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo suave */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.comments h2 {
+    font-size: 22px;
+    color: #110749;
+    margin-bottom: 15px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.comment {
+    margin-bottom: 20px;
+}
+
+.username {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007BFF; /* Color azul para destacar los nombres */
+    margin-bottom: 5px;
+}
+
+.user-comment {
+    font-size: 16px;
+    font-style: italic; /* Estilo delicado para el comentario */
+    color: #555;
+    line-height: 1.5;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-selector {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.selector-dot {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    border: 2px solid #800a20;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.selector-dot.active {
+    background-color: #800a20;
+    transform: scale(1.2);
+}
+
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    .product-title {
+        font-size: 22px; /* Ajustado para pantallas pequeñas */
+    }
+
+    .product-description {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .features h2 {
+        font-size: 20px;
+    }
+
+    .feature p {
+        font-size: 16px;
+    }
+
+    .progress-bar {
+        height: 15px;
+    }
+
+    .btn {
+        font-size: 18px; /* Texto ligeramente más pequeño en móviles */
+        padding: 12px; /* Reducir padding en pantallas pequeñas */
+    }
+
+    .rating span {
+        font-size: 40px;
+    }
+
+    .rating p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+
+    .comments h2 {
+        font-size: 20px;
+    }
+
+    .username {
+        font-size: 16px;
+    }
+
+    .user-comment {
+        font-size: 14px;
+    }
+}
