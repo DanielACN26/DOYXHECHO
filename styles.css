@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Chicle';
+    src: url('path/to/Chicle-Regular.ttf') format('truetype');
+}
+
 body {
     font-family: 'Chicle', 'Comic Sans MS', 'Poppins', sans-serif; /* Fuente divertida y enérgica */
     background: linear-gradient(135deg, #fff8e7 25%, #f9caca 100%);
