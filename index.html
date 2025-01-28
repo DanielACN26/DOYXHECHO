@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Producto Destacado</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -13,72 +14,48 @@
     <main>
         <div class="product-container">
             <div class="image-container">
-                <img src="portadacaja.png" alt="Producto" class="product-image" id="main-image">
-                <div class="image-selector">
-                    <div class="selector-dot active" data-image="portadacaja.png"></div>
-                    <div class="selector-dot" data-image="cajaatras.png"></div>
-                </div>
+                <img src="caja.jpg" alt="Producto" class="product-image" id="main-image">
             </div>
             <h1 class="product-title">DOY X HECHO - ANDREZZ & SKINNY</h1>
             <div class="rating">
-                <span>★★★★★</span>
-                <p class="rating-details">5.0 (2005 valoraciones)</p>
+                <span class="stars">★★★★★</span>
+                <p class="rating-details">5.0 ESTRELLAS</p>
             </div>
-            <p class="product-description">¡Prepárate para un desayuno lleno de sabor y ritmo con DOY X HECHO de Andrezz & Skinny!
-                 Este éxito urbano es el cereal perfecto para empezar el día con energía y estilo. 
-                 Con un beat tan crujiente como las piezas en tu tazón y un flow que te envuelve como la leche, esta canción es la combinación perfecta de sabor y actitud. 
-                ¡Dale un giro a tu mañana y deja que el sabor del ritmo invada tu día con DOY X HECHO!</p>
-            <div class="features">
-                <h2>Características del Producto</h2>
-                <div class="feature">
-                    <p>Lírica</p>
-                    <div class="progress-bar full"></div>
-                </div>
-                <div class="feature">
-                    <p>Flow</p>
-                    <div class="progress-bar full"></div>
-                </div>
-                <div class="feature">
-                    <p>Improvisación</p>
-                    <div class="progress-bar three-quarters"></div>
-                </div>
-            </div>
-            <button class="btn preview-btn">Ver Preview</button>
-            <button class="btn get-product-btn">Obtener Producto</button>
+            <p class="product-description">
+                ¡Prepárate para darlo todo con un bowl de DOY X HECHO! El desayuno de Skinny y Andrezz te dará la energía para lograr todo lo que te propongas. 
+                No hay mejor acompañante para este crujiente cereal que el ritmo que estás apunto de escuchar. 
+                ¡Dale click para descubrir el verdadero desayuno de campeones!
+            </p>
+            <button class="btn preview-btn" onclick="window.open('https://www.youtube.com/@Andrezz', '_blank')">VER PREVIEW</button>
+            <button class="btn get-product-btn" onclick="window.open('https://www.youtube.com/channel/UCO6ROGRlmyc1NNQ26EyVSJw', '_blank')">OBTENER PRODUCTO</button>
             <div class="comments">
                 <h2>Comentarios</h2>
                 <div class="comment">
-                    <h3 class="username">Juan Pérez</h3>
-                    <p class="user-comment">"El producto es increíble, superó mis expectativas. La calidad es excelente y el servicio fue rápido y eficiente."</p>
+                    <img src="photosperfil/perfilart.jpeg" alt="Foto de perfil de @articrose" class="profile-picture">
+                    <div class="comment-content">
+                        <h3 class="username">@articrose</h3>
+                        <p class="user-comment">“Soy adicto!! no puedo tener una caja de Doy X Hecho en mi casa porque se acaba en un 2x3. aparte es perfecto para los munchies de medianoche”</p>
+                    </div>
                 </div>
                 <div class="comment">
-                    <h3 class="username">María López</h3>
-                    <p class="user-comment">"Estoy muy satisfecha con mi compra. Definitivamente lo recomendaría a mis amigos y familiares."</p>
+                    <img src="photosperfil/perfilbad.jpeg" alt="Foto de perfil de @badmarciano" class="profile-picture">
+                    <div class="comment-content">
+                        <h3 class="username">@badmarciano</h3>
+                        <p class="user-comment">“El mejor cereal de Caracas!! desayuno esto todos los días antes de ir a trabajar y es la mejor parte de mi mañana. lo recomiendo 100%”</p>
+                    </div>
+                </div>
+                <div class="comment">
+                    <img src="photosperfil/perfilarab.jpeg" alt="Foto de perfil de @elarabito" class="profile-picture">
+                    <div class="comment-content">
+                        <h3 class="username">@elarabito</h3>
+                        <p class="user-comment">“Llevo años buscando un cereal que me de energía, y después de un bowl de Doy X Hecho no hay quien me pare”</p>
+                    </div>
                 </div>
             </div>
-            
         </div>
     </main>
     <footer>
         <p>© 2025 Todos los derechos reservados.</p>
     </footer>
 </body>
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const mainImage = document.getElementById("main-image");
-        const selectorDots = document.querySelectorAll(".selector-dot");
-
-        selectorDots.forEach(dot => {
-            dot.addEventListener("click", () => {
-                // Cambiar la imagen principal
-                mainImage.src = dot.dataset.image;
-
-                // Actualizar la clase "active" en los puntos
-                selectorDots.forEach(d => d.classList.remove("active"));
-                dot.classList.add("active");
-            });
-        });
-    });
-</script>
-
 </html>

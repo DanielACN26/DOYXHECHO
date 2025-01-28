@@ -1,21 +1,21 @@
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Chicle', 'Comic Sans MS', 'Poppins', sans-serif; /* Fuente divertida y enérgica */
+    background: linear-gradient(135deg, #fff8e7 25%, #f9caca 100%);
     margin: 0;
     padding: 0;
-    background-color: white;
     color: #333;
 }
 
 header, footer {
     background-color: #800a20;
     color: white;
-    padding: 15px 20px;
-    text-align: left;
+    padding: 25px 20px;
+    text-align: center;
     position: relative;
 }
 
 header .logo {
-    width: 100px;
+    width: 150px;
     display: inline-block;
     vertical-align: middle;
 }
@@ -24,8 +24,11 @@ header h1 {
     display: inline-block;
     margin: 0;
     margin-left: 15px;
-    font-size: 24px;
+    font-size: 30px; /* Tamaño más grande */
     vertical-align: middle;
+    font-family: 'Chicle', 'Comic Sans MS', sans-serif; /* Fuente alegre */
+    color: #fff500; /* Amarillo vibrante */
+    text-shadow: 2px 2px #ff6b6b; /* Sombra para un efecto pop */
 }
 
 main {
@@ -37,17 +40,17 @@ main {
 .features {
     margin-top: 20px;
     padding: 20px;
-    background-color: #f1f1f1;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fdf5e6; /* Fondo más cálido */
+    border-radius: 20px; /* Bordes más redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra más suave */
     text-align: left;
 }
 
 .features h2 {
-    font-size: 22px;
+    font-size: 26px; /* Más grande y llamativo */
     margin-bottom: 20px;
-    color: #110749;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #ff6b6b;
+    font-family: 'Chicle', 'Comic Sans MS', sans-serif;
 }
 
 .feature {
@@ -61,34 +64,32 @@ main {
     color: #333;
 }
 
-.progress-bar {
-    width: 100%;
-    height: 20px;
-    background-color: #ddd;
-    border-radius: 5px;
-    overflow: hidden;
+.ingredients {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: #f9caca; /* Fondo suave en tonos cálidos */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.ingredients h2 {
+    font-size: 30px;
+    font-family: 'Chicle', 'Comic Sans MS', sans-serif;
+    color: #ff6b6b;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px #ff6b6b;
+}
+
+/* Contenedor de ingredientes */
+.ingredient-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
     position: relative;
-    margin-top: 5px;
-}
-
-.progress-bar::before {
-    content: '';
-    display: block;
-    height: 100%;
-    background-color: #800a20; /* Color de progreso */
-    transition: width 0.3s ease;
-}
-
-.progress-bar.full::before {
-    width: 100%; /* Llena completamente */
-}
-
-.progress-bar.three-quarters::before {
-    width: 75%; /* Llena al 75% */
-}
-
-.progress-bar.half::before {
-    width: 50%; /* Llena al 50% */
+    margin-top: 20px;
 }
 
 .product-container {
@@ -102,54 +103,71 @@ main {
     border-radius: 10px;
 }
 
-/* Estilo mejorado para el título */
 .product-title {
-    font-size: 28px; /* Más grande */
-    margin: 15px 0;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold; /* Más gruesa */
-    color: #110749; /* Color destacado */
+    font-size: 40px; /* Tamaño grande para destacar */
+    margin: 20px 0;
+    font-family: 'Chicle', 'Comic Sans MS', sans-serif; /* Fuente divertida y dinámica */
+    font-weight: bold;
+    color: #ffd700; /* Amarillo vibrante */
+    text-shadow: 
+        2px 2px 0 #ffa500, /* Naranja oscuro, para efecto 3D */
+        4px 4px 0 rgba(0, 0, 0, 0.2); /* Sombra suave negra para mayor profundidad */
+    letter-spacing: 1px; /* Espaciado entre letras para más legibilidad */
+    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Suavidad en la animación */
 }
 
-/* Estilo mejorado para la descripción */
+.product-title:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
+    text-shadow: 
+        3px 3px 0 #ff8c00, /* Naranja más vibrante */
+        5px 5px 0 rgba(0, 0, 0, 0.3); /* Sombra negra más intensa */
+}
+
 .product-description {
-    font-size: 16px; /* Tamaño más grande */
+    font-size: 18px;
     margin: 10px 0;
-    font-family: 'Arial', sans-serif;
-    font-style: italic; /* Opcional, puedes eliminarlo si no quieres este estilo */
-    color: #555;
-    text-align: justify; /* Alineación justificada */
-    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+    font-family: 'Comic Sans MS', sans-serif; /* Fuente con carácter alegre */
+    color: #333;
+    text-align: justify;
+    line-height: 1.6;
 }
 
 
 .btn {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Chicle', 'Comic Sans MS', sans-serif;
     display: block;
     width: 80%;
-    max-width: 250px; /* Botones más grandes */
-    margin: 15px auto; /* Mayor espaciado entre botones */
-    padding: 15px; /* Más padding para un diseño espacioso */
-    font-size: 20px; /* Texto más grande */
-    font-weight: bold; /* Texto en negrita */
-    color: white; /* Texto en blanco */
-    background-color: #800a20; /* Color azul primario */
-    border: none;
-    border-radius: 8px; /* Bordes más redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de profundidad */
+    max-width: 250px;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff6f00, #ff9800); /* Colores vibrantes y cálidos */
+    border: 2px solid transparent;
+    border-radius: 50px; /* Bordes redondeados para un aspecto moderno */
+    background-clip: padding-box;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
-    text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, scale 0.1s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Sombra en el texto para mayor contraste */
 }
 
 .btn:hover {
-    background-color: #3d0610; /* Color más oscuro al pasar el cursor */
-    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+    background: linear-gradient(45deg, #ff8f00, #ff5722); /* Colores más intensos en hover */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño para que sea más atractivo */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
+    border-color: #ff5722; /* Color de borde al pasar el cursor */
 }
 
 .btn:active {
-    transform: scale(0.98); /* Efecto de clic */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra reducida al hacer clic */
+    transform: scale(0.95); /* Efecto de clic (más pequeño) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, #ff6f00, #ff9800); /* Mantiene el color base */
+}
+
+.btn:focus {
+    outline: none; /* Elimina el contorno por defecto del navegador */
 }
 
 .rating {
@@ -159,17 +177,35 @@ main {
     margin-top: 10px;
 }
 
-.rating span {
+/* Estilo para las estrellas con efecto visual */
+.rating .stars {
     font-size: 50px;
-    color: gold;
-    margin-right: 8px; /* Espaciado entre estrellas y texto */
+    font-weight: bold;
+    background: linear-gradient(90deg, #ffd700, #ff8c00, #ffd700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    animation: shine 3s linear infinite; /* Animación del gradiente */
+    margin-right: 8px;
 }
 
+/* Detalles de la calificación */
 .rating-details {
     font-size: 18px;
     color: #333;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Chicle', 'Comic Sans MS', sans-serif;
 }
+
+/* Animación del brillo */
+@keyframes shine {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+
 
 footer {
     text-align: center;
@@ -178,40 +214,57 @@ footer {
     padding-top: 10px;
 }
 
-/* Sección de comentarios */
 .comments {
     margin-top: 20px;
     text-align: left;
     padding: 20px;
-    background-color: #f9f9f9; /* Fondo suave */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .comments h2 {
-    font-size: 22px;
-    color: #110749;
+    font-size: 27px;
+    color: #800a20;
     margin-bottom: 15px;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-family: 'Chicle', 'Comic Sans MS', sans-serif;
 }
 
 .comment {
-    margin-bottom: 20px;
+    display: flex; /* Alineación horizontal de imagen y contenido */
+    align-items: flex-start;
+    margin-bottom: 20px; /* Separación entre comentarios */
+    flex-wrap: wrap; /* Permite que el contenido se ajuste en pantallas pequeñas */
+}
+
+.profile-picture {
+    width: 50px; /* Tamaño de la foto de perfil */
+    height: 50px;
+    border-radius: 8px; /* Esquinas redondeadas, pero foto cuadrada */
+    margin-right: 15px; /* Separación entre la imagen y el texto */
+    object-fit: cover; /* Ajustar la imagen dentro del contenedor cuadrado */
+    border: 2px solid #ddd; /* Borde alrededor de la foto */
+}
+
+.comment-content {
+    max-width: calc(100% - 70px); /* Deja espacio para la foto */
+    flex-grow: 1;
 }
 
 .username {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
-    color: #007BFF; /* Color azul para destacar los nombres */
-    margin-bottom: 5px;
+    color: #007BFF;
+    margin-bottom: 10px;
 }
 
 .user-comment {
     font-size: 16px;
-    font-style: italic; /* Estilo delicado para el comentario */
+    font-style: italic;
     color: #555;
     line-height: 1.5;
 }
+
 
 .image-container {
     position: relative;
@@ -287,14 +340,18 @@ footer {
     }
 
     .comments h2 {
-        font-size: 20px;
+        font-size: 25px;
+        margin-bottom: 30px;
     }
 
     .username {
-        font-size: 16px;
+        font-size: 20px;
+        margin-top: 10px;
     }
 
     .user-comment {
-        font-size: 14px;
+        font-size: 17px;
+        margin-top: 5px;
+        margin-bottom: 20px;
     }
 }
