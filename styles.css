@@ -4,8 +4,8 @@
 }
 
 body {
-    font-family: 'Chicle', 'Comic Sans MS', 'Poppins', sans-serif; /* Fuente divertida y enérgica */
-    background: linear-gradient(135deg, #fff8e7 25%, #f9caca 100%);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(135deg, #001f3f 0%, #003366 25%, #001f3f 75%, #000022 100%);
     margin: 0;
     padding: 0;
     color: #333;
@@ -31,7 +31,7 @@ header h1 {
     margin-left: 15px;
     font-size: 30px; /* Tamaño más grande */
     vertical-align: middle;
-    font-family: 'Chicle', 'Comic Sans MS', sans-serif; /* Fuente alegre */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #fff500; /* Amarillo vibrante */
     text-shadow: 2px 2px #ff6b6b; /* Sombra para un efecto pop */
 }
@@ -54,7 +54,7 @@ main {
     font-size: 26px; /* Más grande y llamativo */
     margin-bottom: 20px;
     color: #ff6b6b;
-    font-family: 'Chicle', 'Comic Sans MS', sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .feature {
@@ -83,7 +83,7 @@ main {
 .product-title {
     font-size: 43px; /* Tamaño grande para destacar */
     margin: 20px 0;
-    font-family: 'Chicle', 'Comic Sans MS', sans-serif; /* Fuente divertida y dinámica */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     color: #ffd700; /* Amarillo vibrante */
     text-shadow: 
@@ -97,21 +97,22 @@ main {
     transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
     text-shadow: 
         3px 3px 0 #ff8c00, /* Naranja más vibrante */
-        5px 5px 0 rgba(0, 0, 0, 0.3); /* Sombra negra más intensa */
+        5px 5px 0 rgba(0, 0, 0, 0.8); /* Sombra negra más intensa */
 }
 
 .product-description {
     font-size: 18px;
     margin: 10px 0;
-    font-family: 'Comic Sans MS', sans-serif; /* Fuente con carácter alegre */
-    color: #800a20;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic; /* Hace el texto en cursiva */
+    color: #ffffff;
     text-align: justify;
     line-height: 1.6;
 }
 
 
 .btn {
-    font-family: 'Chicle', 'Comic Sans MS', sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: block;
     width: 80%;
     max-width: 250px;
@@ -169,8 +170,8 @@ main {
 /* Detalles de la calificación */
 .rating-details {
     font-size: 18px;
-    color: #333;
-    font-family: 'Chicle', 'Comic Sans MS', sans-serif;
+    color: #ffffff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .progress-bar {
@@ -183,7 +184,7 @@ main {
 }
 
 .features p {
-    color: #800a20; /* Color del texto */
+    color: #ffffff; /* Color del texto */
     font-size: 18px; /* Ajusta el tamaño si es necesario */
     font-weight: bold; /* Texto en negrita para destacar */
     margin-bottom: 5px; /* Espaciado con la barra de progreso */
@@ -232,16 +233,15 @@ footer {
     margin-top: 20px;
     text-align: left;
     padding: 20px;
-    background: linear-gradient(135deg, #fff8e7 25%, #f9caca 100%);
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .comments h2 {
     font-size: 27px;
-    color: #800a20;
+    color: #ffffff;
     margin-bottom: 15px;
-    font-family: 'Chicle', 'Comic Sans MS', sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .comment {
@@ -268,14 +268,14 @@ footer {
 .username {
     font-size: 25px;
     font-weight: bold;
-    color: #130372;
+    color:#ff9800;
     margin-bottom: 10px;
 }
 
 .user-comment {
     font-size: 16px;
     font-style: italic;
-    color: #555;
+    color: #ffffff;
     line-height: 1.5;
 }
 
