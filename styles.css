@@ -169,7 +169,7 @@ main {
 
 /* Detalles de la calificación */
 .rating-details {
-    font-size: 18px;
+    font-size: 20px;
     color: #ffffff;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -344,13 +344,14 @@ footer {
     }
 
     .rating p {
-        font-size: 18px;
+        font-size: 20px;
         margin-bottom: 10px;
         font-weight: bold;
     }
 
     footer {
         font-size: 15px;
+        font-weight: bold; /* Hace el texto en negrita */
     }
 
     .comments h2 {
