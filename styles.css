@@ -1,40 +1,64 @@
-@font-face {
-    font-family: 'Chicle';
-    src: url('path/to/Chicle-Regular.ttf') format('truetype');
-}
-
 body {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: linear-gradient(135deg, #001f3f 0%, #003366 25%, #001f3f 75%, #000022 100%);
+    font-family: 'Blogger Sans', sans-serif;
+    background: #ffffff;
     margin: 0;
     padding: 0;
     color: #333;
 }
 
-header, footer {
+footer {
     background-color: #800a20;
     color: white;
-    padding: 25px 20px;
+    padding: 20px 20px;
     text-align: center;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra para dar profundidad */
+}
+
+header {
+    background-color: #800a20;
+    padding: 20px 20px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra para dar profundidad */
 }
 
 header .logo {
     width: 150px;
+    height: auto;
     display: inline-block;
     vertical-align: middle;
+    transition: transform 0.3s ease-in-out;
+}
+
+header .logo:hover {
+    transform: scale(1.1); /* Efecto de hover para dar dinamismo */
 }
 
 header h1 {
     display: inline-block;
     margin: 0;
     margin-left: 15px;
-    font-size: 30px; /* Tamaño más grande */
+    font-size: 30px;
     vertical-align: middle;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #fff500; /* Amarillo vibrante */
-    text-shadow: 2px 2px #ff6b6b; /* Sombra para un efecto pop */
+    font-family: 'Blogger Sans', sans-serif;
+    color: #fff500;
+    text-shadow: 3px 3px 4px rgba(255, 107, 107, 0.8); /* Sombra más difusa para efecto glow */
+    letter-spacing: 1px;
+    transition: text-shadow 0.3s ease-in-out;
 }
+
+header h1:hover {
+    text-shadow: 4px 4px 6px rgba(255, 107, 107, 1); /* Efecto glow más intenso al pasar el mouse */
+}
+
+
 
 main {
     padding: 20px;
@@ -46,7 +70,9 @@ main {
     margin-top: 20px;
     padding: 20px;
     border-radius: 20px; /* Bordes más redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra más suave */
+    box-shadow: 
+        3px 3px 0 #ff8c00, /* Naranja más vibrante */
+        5px 5px 0 rgba(0, 0, 0, 0.9); /* Sombra negra más intensa */
     text-align: left;
 }
 
@@ -54,7 +80,7 @@ main {
     font-size: 26px; /* Más grande y llamativo */
     margin-bottom: 20px;
     color: #ff6b6b;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Blogger Sans', sans-serif;
 }
 
 .feature {
@@ -69,7 +95,7 @@ main {
 }
 
 .product-container {
-    max-width: 600px;
+    max-width: 550px;
     margin: 0 auto;
 }
 
@@ -81,38 +107,67 @@ main {
 }
 
 .product-title {
-    font-size: 43px; /* Tamaño grande para destacar */
     margin: 20px 0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Blogger Sans', sans-serif;
     font-weight: bold;
-    color: #ffd700; /* Amarillo vibrante */
+    color: #f1ce05; /* Amarillo vibrante */
     text-shadow: 
-        2px 2px 0 #ffa500, /* Naranja oscuro, para efecto 3D */
-        4px 4px 0 rgba(0, 0, 0, 0.2); /* Sombra suave negra para mayor profundidad */
+        3px 3px 0 #ff8c00, /* Naranja más vibrante */
+        5px 5px 0 rgba(0, 0, 0, 0.9); /* Sombra negra más intensa */
     letter-spacing: 1px; /* Espaciado entre letras para más legibilidad */
     transition: transform 0.3s ease, text-shadow 0.3s ease; /* Suavidad en la animación */
+    text-align: center; /* Centrado del título */
+}
+
+.product-title .top-line {
+    font-size: 50px;
+    display: block;
+}
+
+.product-title .bottom-line {
+    font-size: 35px;
+    font-style: italic;
+    display: block;
+    margin-top: -40px; /* Espacio reducido entre las líneas */
 }
 
 .product-title:hover {
     transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
     text-shadow: 
         3px 3px 0 #ff8c00, /* Naranja más vibrante */
-        5px 5px 0 rgba(0, 0, 0, 0.8); /* Sombra negra más intensa */
+        5px 5px 0 rgba(0, 0, 0, 0.9); /* Sombra negra más intensa */
 }
 
+
 .product-description {
+    margin-top: 10px;
+    text-align: left;
+    font-style: italic;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:
+        3px 3px 0 #ff8c00, /* Naranja más vibrante */
+        5px 5px 0 rgba(0, 0, 0, 0.9); /* Sombra negra más intensa */
+    background: white; /* Asegura un fondo limpio */
+}
+
+.product-description h2 {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 15px;
+    font-family: 'Blogger Sans', sans-serif;
+}
+
+.product-description p {
     font-size: 18px;
-    margin: 10px 0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic; /* Hace el texto en cursiva */
-    color: #ffffff;
-    text-align: justify;
+    font-family: 'Blogger Sans', sans-serif;
+    color: #333;
     line-height: 1.6;
 }
 
 
 .btn {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Blogger Sans', sans-serif;
     display: block;
     width: 80%;
     max-width: 250px;
@@ -121,28 +176,35 @@ main {
     font-size: 24px;
     font-weight: bold;
     color: white;
-    background: linear-gradient(45deg, #ff6f00, #ff9800); /* Colores vibrantes y cálidos */
+    background: black; /* Mantener color negro */
     border: 2px solid transparent;
-    border-radius: 50px; /* Bordes redondeados para un aspecto moderno */
+    border-radius: 50px; /* Bordes redondeados */
     background-clip: padding-box;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4); /* Sombra más profunda */
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, scale 0.1s ease;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Sombra en el texto para mayor contraste */
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, scale 0.1s ease, text-shadow 0.3s ease;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Más sombra para el texto */
 }
 
 .btn:hover {
-    background: linear-gradient(45deg, #ff8f00, #ff5722); /* Colores más intensos en hover */
-    transform: scale(1.1); /* Aumenta ligeramente el tamaño para que sea más atractivo */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
-    border-color: #ff5722; /* Color de borde al pasar el cursor */
+    background: rgba(0, 0, 0, 0.8); /* Sombra de color negro para un toque sutil */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Sombra más intensa */
+    border-color: #333; /* Color de borde más oscuro */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Efecto de texto con mayor contraste */
 }
 
 .btn:active {
-    transform: scale(0.95); /* Efecto de clic (más pequeño) */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(45deg, #ff6f00, #ff9800); /* Mantiene el color base */
+    transform: scale(0.95); /* Efecto de clic */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra más ligera al hacer clic */
+    background: rgba(0, 0, 0, 0.9); /* Fondo más oscuro al hacer clic */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Vuelve al texto normal */
 }
+
+.btn:focus {
+    outline: none; /* Elimina el contorno predeterminado del navegador */
+}
+
 
 .btn:focus {
     outline: none; /* Elimina el contorno por defecto del navegador */
@@ -152,7 +214,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 /* Estilo para las estrellas con efecto visual */
@@ -170,8 +232,8 @@ main {
 /* Detalles de la calificación */
 .rating-details {
     font-size: 20px;
-    color: #ffffff;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-family: 'Blogger Sans', sans-serif;
 }
 
 .progress-bar {
@@ -184,7 +246,7 @@ main {
 }
 
 .features p {
-    color: #ffffff; /* Color del texto */
+    color: black; /* Color del texto */
     font-size: 18px; /* Ajusta el tamaño si es necesario */
     font-weight: bold; /* Texto en negrita para destacar */
     margin-bottom: 5px; /* Espaciado con la barra de progreso */
@@ -234,14 +296,16 @@ footer {
     text-align: left;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 
+        3px 3px 0 #ff8c00, /* Naranja más vibrante */
+        5px 5px 0 rgba(0, 0, 0, 0.9); /* Sombra negra más intensa */
 }
 
 .comments h2 {
     font-size: 27px;
-    color: #ffffff;
+    color: black;
     margin-bottom: 15px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Blogger Sans', sans-serif;
 }
 
 .comment {
@@ -275,10 +339,9 @@ footer {
 .user-comment {
     font-size: 16px;
     font-style: italic;
-    color: #ffffff;
+    color: black;
     line-height: 1.5;
 }
-
 
 .image-container {
     position: relative;
@@ -313,13 +376,21 @@ footer {
         font-size: 18px;
     }
 
+    .product-image {
+        width: 80%; /* Reduce el tamaño al 80% del contenedor */
+        max-width: 380px; /* Establece un límite de tamaño */
+        display: block;
+        margin: 0 auto; /* Centrar la imagen */
+    }
+
     .product-title {
         font-size: 33px; /* Ajustado para pantallas pequeñas */
     }
 
     .product-description {
-        font-size: 15px;
+        font-size: 17px;
         text-align: justify;
+        font-weight: bold;
     }
 
     .features h2 {
