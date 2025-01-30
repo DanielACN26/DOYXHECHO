@@ -83,6 +83,7 @@ main {
         3px 3px 0 #ff8c00, /* Naranja más vibrante */
         5px 5px 0 rgba(0, 0, 0, 0.9); /* Sombra negra más intensa */
     text-align: left;
+    background: white;
 }
 
 .features h2 {
@@ -148,33 +149,42 @@ main {
         5px 5px 0 rgba(0, 0, 0, 0.9); /* Sombra negra más intensa */
 }
 
-
 .product-description {
-    margin-top: 10px;
+    margin-top: 20px; /* Mayor separación */
     text-align: left;
     font-style: italic;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow:
-        3px 3px 0 #ff8c00, /* Naranja más vibrante */
-        5px 5px 0 rgba(0, 0, 0, 0.9); /* Sombra negra más intensa */
-    background: white; /* Asegura un fondo limpio */
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 800px; /* Limita el ancho para que el texto no se expanda demasiado */
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 
+        4px 4px 0 #ff8c00, /* Naranja vibrante */
+        6px 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más difusa y natural */
+    background: white;
 }
 
 .product-description h2 {
-    font-size: 30px;
+    font-size: 32px;
     color: black;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-family: 'Blogger Sans', sans-serif;
+    text-align: center; /* Centra el título para mayor impacto */
 }
 
 .product-description p {
     font-size: 18px;
     font-family: 'Blogger Sans', sans-serif;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.9; /* Más espacio entre líneas */
+    text-align: justify; /* Justifica el texto para una lectura más ordenada */
+    margin-bottom: 15px; /* Espaciado entre párrafos */
 }
 
+/* Añadir más separación entre elementos internos */
+.product-description p:last-child {
+    margin-bottom: 0; /* Evita margen extra en el último párrafo */
+}
 
 .btn {
     font-family: 'Blogger Sans', sans-serif;
@@ -222,28 +232,47 @@ main {
 
 .rating {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    gap: 10px;
     margin-top: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    width: fit-content;
+    margin: 0 auto; /* Centrar */
 }
 
-/* Estilo para las estrellas con efecto visual */
-.rating .stars {
-    font-size: 50px;
+.rating-score {
+    font-size: 24px;
     font-weight: bold;
-    background: linear-gradient(90deg, #ffd700, #ff8c00, #ffd700);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200%;
-    animation: shine 3s linear infinite; /* Animación del gradiente */
-    margin-right: 8px;
+    color: #ff9800;
+    font-family: 'Blogger Sans', sans-serif;
 }
 
-/* Detalles de la calificación */
-.rating-details {
-    font-size: 20px;
-    color: black;
-    font-family: 'Blogger Sans', sans-serif;
+.stars {
+    display: flex;
+    gap: 5px;
+}
+
+.star {
+    font-size: 40px;
+    color: #ffc400; /* Color dorado */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9); /* Sombra para efecto 3D */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+/* Efecto hover para agrandar la estrella */
+.star:hover {
+    transform: scale(1.2);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Efecto cuando la estrella está activa (calificación dada) */
+.star.active {
+    color: #ffa500; /* Color más vibrante */
+    text-shadow: 3px 3px 6px rgba(255, 165, 0, 0.7);
+    transform: scale(1.15);
 }
 
 .progress-bar {
@@ -319,6 +348,7 @@ footer {
     box-shadow: 
         3px 3px 0 #ff8c00, /* Naranja más vibrante */
         5px 5px 0 rgba(0, 0, 0, 0.9); /* Sombra negra más intensa */
+    background: white;
 }
 
 .comments h2 {
@@ -412,7 +442,8 @@ footer {
     .product-description {
         font-size: 17px;
         text-align: justify;
-        font-weight: bold;
+        line-height: 1.4; /* Más espacio entre líneas */
+        padding: 19px;
     }
 
     .features h2 {
@@ -432,14 +463,14 @@ footer {
         padding: 12px; /* Reducir padding en pantallas pequeñas */
     }
 
-    .rating span {
-        font-size: 40px;
+    .rating {
+        padding: 0px;
     }
 
-    .rating p {
-        font-size: 20px;
-        margin-bottom: 10px;
-        font-weight: bold;
+    .star {
+        font-size: 50px;
+        margin-top: -10px;
+        margin-bottom: -10px;
     }
 
     footer {
