@@ -15,7 +15,16 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra para dar profundidad */
+}
+
+.developer {
+    position: absolute;
+    right: 20px; /* Ajusta la distancia desde la derecha */
+    font-size: 14px; /* Tamaño pequeño para que no sea tan llamativo */
+    color: rgba(255, 255, 255, 0.7); /* Blanco más suave */
+    margin-top: 80px; /* Separación de la parte superior */
 }
 
 header {
@@ -77,14 +86,15 @@ main {
 }
 
 .features h2 {
-    font-size: 26px; /* Más grande y llamativo */
-    margin-bottom: 20px;
-    color: #ff6b6b;
+    margin-top: 5px;
+    font-size: 28px;
+    color: black;
+    margin-bottom: 25px;
     font-family: 'Blogger Sans', sans-serif;
 }
 
 .feature {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .feature p {
@@ -110,10 +120,10 @@ main {
     margin: 20px 0;
     font-family: 'Blogger Sans', sans-serif;
     font-weight: bold;
-    color: #f1ce05; /* Amarillo vibrante */
+    color: #f1ba05; /* Amarillo vibrante */
     text-shadow: 
-        3px 3px 0 #ff8c00, /* Naranja más vibrante */
-        5px 5px 0 rgba(0, 0, 0, 0.9); /* Sombra negra más intensa */
+        1px 3px 0 #ff5100, /* Naranja más vibrante */
+        3px 5px 0 rgba(0, 0, 0, 0.9); /* Sombra negra más intensa */
     letter-spacing: 1px; /* Espaciado entre letras para más legibilidad */
     transition: transform 0.3s ease, text-shadow 0.3s ease; /* Suavidad en la animación */
     text-align: center; /* Centrado del título */
@@ -243,6 +253,7 @@ main {
     overflow: hidden;
     position: relative;
     margin: 10px 0; /* Distancia uniforme entre las barras */
+    background-color: #d3d3d3; /* Color de la barra vacía (gris claro) */
 }
 
 .features p {
@@ -269,8 +280,17 @@ main {
 }
 
 .progress-bar.half::before {
-    width: 1%; /* Llena al 1% */
+    width: 50%; /* Llena al 50% */
 }
+
+.progress-bar.quarter::before {
+    width: 25%; /* Llena al 25% */
+}
+
+.progress-bar.empty::before {
+    width: 1%; /* Barra vacía */
+}
+
 
 
 /* Animación del brillo */
@@ -313,6 +333,8 @@ footer {
     align-items: flex-start;
     margin-bottom: 20px; /* Separación entre comentarios */
     flex-wrap: wrap; /* Permite que el contenido se ajuste en pantallas pequeñas */
+    padding-bottom: 5px; /* Espacio adicional para la separación */
+    border-bottom: 2px solid #ff8c00; /* Barra de separación en naranja */
 }
 
 .profile-picture {
@@ -394,7 +416,7 @@ footer {
     }
 
     .features h2 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .feature p {
