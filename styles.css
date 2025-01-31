@@ -67,8 +67,6 @@ header h1:hover {
     text-shadow: 4px 4px 6px rgba(255, 107, 107, 1); /* Efecto glow más intenso al pasar el mouse */
 }
 
-
-
 main {
     padding: 20px;
     text-align: center;
@@ -77,12 +75,12 @@ main {
 /* Sección de características */
 .features {
     margin-top: 20px;
+    text-align: left;
     padding: 20px;
     border-radius: 20px; /* Bordes más redondeados */
     box-shadow: 
-        3px 3px 0 #ff8c00, /* Naranja más vibrante */
-        5px 5px 0 rgba(0, 0, 0, 0.9); /* Sombra negra más intensa */
-    text-align: left;
+        4px 4px 0 #ff8c00, /* Naranja vibrante */
+        6px 6px 12px rgba(0, 0, 0, 0.7); /* Sombra más difusa y natural */
     background: white;
 }
 
@@ -131,12 +129,12 @@ main {
 }
 
 .product-title .top-line {
-    font-size: 46px;
+    font-size: 75px;
     display: block;
 }
 
 .product-title .bottom-line {
-    font-size: 30px;
+    font-size: 45px;
     font-style: italic;
     display: block;
     margin-top: -40px; /* Espacio reducido entre las líneas */
@@ -151,16 +149,18 @@ main {
 
 .product-description {
     margin-top: 20px; /* Mayor separación */
+    font-size: 30px;
     text-align: left;
+    text-align: justify;
     font-style: italic;
-    padding: 25px;
+    padding: 30px;
     border-radius: 12px;
-    max-width: 800px; /* Limita el ancho para que el texto no se expanda demasiado */
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1000px; /* Limita el ancho para que el texto no se expanda demasiado */
+    margin-left: -150px;
+    margin-right: -150px;
     box-shadow: 
         4px 4px 0 #ff8c00, /* Naranja vibrante */
-        6px 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más difusa y natural */
+        6px 6px 12px rgba(0, 0, 0, 0.7); /* Sombra más difusa y natural */
     background: white;
 }
 
@@ -186,49 +186,63 @@ main {
     margin-bottom: 0; /* Evita margen extra en el último párrafo */
 }
 
-.btn {
-    font-family: 'Blogger Sans', sans-serif;
-    display: block;
-    width: 80%;
-    max-width: 250px;
-    margin: 20px auto;
-    padding: 20px;
-    font-size: 24px;
+/* Botón principal - OBTENER PRODUCTO */
+.get-product-btn {
+    font-size: 26px;
     font-weight: bold;
-    color: white;
-    background: black; /* Mantener color negro */
-    border: 2px solid transparent;
-    border-radius: 50px; /* Bordes redondeados */
-    background-clip: padding-box;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4); /* Sombra más profunda */
+    padding: 20px 30px;
+    background: black;
+    color: #ff9800; /* Naranja vibrante */
+    border: 3px solid #ff9800;
+    border-radius: 50px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, scale 0.1s ease, text-shadow 0.3s ease;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Más sombra para el texto */
+    transition: all 0.3s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(255, 152, 0, 0.7); /* Efecto de brillo en el texto */
 }
 
-.btn:hover {
-    background: rgba(0, 0, 0, 0.8); /* Sombra de color negro para un toque sutil */
-    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Sombra más intensa */
-    border-color: #333; /* Color de borde más oscuro */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Efecto de texto con mayor contraste */
+.get-product-btn:hover {
+    background: #1a1a1a;
+    color: white; /* Cambia a blanco para resaltar más */
+    border-color: white;
+    box-shadow: 0 8px 20px rgba(255, 152, 0, 0.8);
+    transform: scale(1.1);
 }
 
-.btn:active {
-    transform: scale(0.95); /* Efecto de clic */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra más ligera al hacer clic */
-    background: rgba(0, 0, 0, 0.9); /* Fondo más oscuro al hacer clic */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Vuelve al texto normal */
+.get-product-btn:active {
+    transform: scale(0.95);
+    background: #ff9800;
+    color: black;
 }
 
-.btn:focus {
-    outline: none; /* Elimina el contorno predeterminado del navegador */
+/* Botón secundario - VER PREVIEW */
+.preview-btn {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 25px;
+    background: white;
+    color: black;
+    border: 3px solid #ff9800;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
-
-.btn:focus {
-    outline: none; /* Elimina el contorno por defecto del navegador */
+.preview-btn:hover {
+    background: black;
+    color: #ff9800;
+    border-color: #ff9800;
+    transform: scale(1.05);
 }
+
+.preview-btn:active {
+    transform: scale(0.95);
+    background: #ff9800;
+    color: black;
+}
+
 
 .rating {
     display: flex;
@@ -255,7 +269,9 @@ main {
 }
 
 .star {
-    font-size: 40px;
+    margin-top: -30px;
+    margin-bottom: -20px;
+    font-size: 80px;
     color: #ffc400; /* Color dorado */
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9); /* Sombra para efecto 3D */
     cursor: pointer;
@@ -320,8 +336,6 @@ main {
     width: 1%; /* Barra vacía */
 }
 
-
-
 /* Animación del brillo */
 @keyframes shine {
     0% {
@@ -346,8 +360,8 @@ footer {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 
-        3px 3px 0 #ff8c00, /* Naranja más vibrante */
-        5px 5px 0 rgba(0, 0, 0, 0.9); /* Sombra negra más intensa */
+        4px 4px 0 #ff8c00, /* Naranja vibrante */
+        6px 6px 12px rgba(0, 0, 0, 0.7); /* Sombra más difusa y natural */
     background: white;
 }
 
@@ -435,15 +449,26 @@ footer {
         margin: 0 auto; /* Centrar la imagen */
     }
 
-    .product-title {
-        font-size: 33px; /* Ajustado para pantallas pequeñas */
+    .product-title .top-line {
+        font-size: 46px;
+        display: block;
+    }
+    
+    .product-title .bottom-line {
+        font-size: 27px;
+        font-style: italic;
+        display: block;
+        margin-top: -40px; /* Espacio reducido entre las líneas */
     }
 
     .product-description {
         font-size: 17px;
         text-align: justify;
+        max-width: 800px; /* Limita el ancho para que el texto no se expanda demasiado */
         line-height: 1.4; /* Más espacio entre líneas */
         padding: 19px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .features h2 {
@@ -458,9 +483,11 @@ footer {
         height: 15px;
     }
 
-    .btn {
-        font-size: 18px; /* Texto ligeramente más pequeño en móviles */
-        padding: 12px; /* Reducir padding en pantallas pequeñas */
+    .get-product-btn{
+        font-size: 24px;
+        font-weight: bold;
+        padding: 20px 30px;
+        margin-top: 10px;
     }
 
     .rating {
@@ -469,7 +496,7 @@ footer {
 
     .star {
         font-size: 50px;
-        margin-top: -10px;
+        margin-top: -15px;
         margin-bottom: -10px;
     }
 
@@ -481,6 +508,7 @@ footer {
     .comments h2 {
         font-size: 25px;
         margin-bottom: 30px;
+        margin-top: 5px;
     }
 
     .username {
